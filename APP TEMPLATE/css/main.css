@@ -7,24 +7,22 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles: opinionated defaults 
    ========================================================================== */
 
 
 body{
-background-image: url(photo-1458682625221-3a45f8a844c7.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #333;
+    background-color: #FFF;
     background-blend-mode:overlay;
+    font-family: 'Montserrat', sans-serif;
 }
 html {
     color: #fff;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Arvo', serif;
-
 }
 .logo {
 background-color:#fff;   
@@ -35,36 +33,38 @@ section {
     max-width: 500px;
 }
 button {
-    margin: 20px;
+    margin-top:-15px ;
+    margin-right: 1px;
 background-color: rgba(255, 255, 255, 0.55);
-padding:15px;
-    border-radius: 50%;
+padding:;
+    border-radius:;
     color: #333;
     text-transform: capitalize;
     font-size: 18pt;
     border: none;    
-    width: 70px;
-    height: 70px;
+    width: 300px;
+    height: ;
 }
 
  
 .dropdown select{
-   background-color: rgba(255, 255, 255, 0.55);
+   background-color: #000000;
   width: 380px;
-     
+  margin-top: -500px;  
   padding: 10px;
+padding-left: 30px;    
   font-size: 30px;
   line-height: 1.5;
   border: 20;
   border-radius: 150px;
   height: 64px;
   -webkit-appearance: none;
-  color: #333;
+  color: #fff;
 text-align: center; 
 }
 dropdown {
 
-
+  text-align: center;
   overflow: hidden;
   background: url("images/downArrow.png") no-repeat right #fff;
   border: 15px solid #000;
@@ -79,5 +79,22 @@ display :none;
 display:none;
 }
 .back {
-text-align: center;
+
+margin-left: -200px;    
+}
+#logoimage {
+margin-bottom: -200px;
+}
+.black {
+color: #000;
+margin-bottom: 35px;    
+}
+.flex {
+display: flex;s
+}
+
+.placeholder {
+width: 700px;
+    margin-right: 50%;
+        margin-left: -25%;
 }
