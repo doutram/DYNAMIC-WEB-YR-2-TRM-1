@@ -1,0 +1,83 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+body{
+background-image: url(photo-1458682625221-3a45f8a844c7.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    background-blend-mode:overlay;
+}
+html {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Arvo', serif;
+
+}
+.logo {
+background-color:#fff;   
+}
+section {
+    text-align: center;
+    margin:auto;
+    max-width: 500px;
+}
+button {
+    margin: 20px;
+background-color: rgba(255, 255, 255, 0.55);
+padding:15px;
+    border-radius: 50%;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 18pt;
+    border: none;    
+    width: 70px;
+    height: 70px;
+}
+
+ 
+.dropdown select{
+   background-color: rgba(255, 255, 255, 0.55);
+  width: 380px;
+     
+  padding: 10px;
+  font-size: 30px;
+  line-height: 1.5;
+  border: 20;
+  border-radius: 150px;
+  height: 64px;
+  -webkit-appearance: none;
+  color: #333;
+text-align: center; 
+}
+dropdown {
+
+
+  overflow: hidden;
+  background: url("images/downArrow.png") no-repeat right #fff;
+  border: 15px solid #000;
+
+}
+
+/*hide results by default*/
+#results {
+display :none;
+}
+#profile {
+display:none;
+}
+.back {
+text-align: center;
+}
