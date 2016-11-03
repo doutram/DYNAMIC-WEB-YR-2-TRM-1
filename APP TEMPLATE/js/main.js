@@ -15,3 +15,8 @@ Backbutton.click(function(){
 Results.hide()
 HomeSection.show()
 })
+//logo fadein//
+var logo = $('#logoimage')
+logo.hide(function(){
+logo.fadeIn(1500);
+})
