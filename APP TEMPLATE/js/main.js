@@ -1,3 +1,4 @@
+
 //var ... window.jquery: // create shortcut for jquery reference.
 
 // jquery show and hide //
