@@ -1,83 +1,105 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-<!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<!-- fonts end -->
+ <!DOCTYPE html>
+
+<html>
+ <!--The-head-starts-here-->    
+<head>
+<!--Mete-tags-and-title-->
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- home section -->
-        <section id="home" >
-            <div class"logo">
-            <img id="logoimage" width="500px "src="img/output_RZ2y4H.gif">
-            </div>
-        <h1 class="black"> What style are you?!</h1>
-            <div class="flex">
-            <div class="dropdown">
+<!--end-of-meta-tags-and-title-->
+<!--All-CSS-links-strat-here-->
+<!--Always-lod-this-first-to-create-a-blank-canvas--><link rel="stylesheet" href="css/normalize.css">
+<!--my-main.css-file--><link rel="stylesheet" href="css/main.css">
+<!--    animate.css-link-is-here--><link rel="stylesheet" href="css/animate%20(6).css">
+<!--All-CSS-links-end-here-->
+<!-- fonts -->
+<!--Link-to-google-fonts--><link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!-- fonts end -->    
+<!--Map-link-is-here-->
+<!--This-is-the-link-to-mapbox--><link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />     
+<!--Map-links-end-here-->    
+</head>
+<!--The-head-ends-here-->    
+<!--Start-of-the-body-->
+<body>
+<!--start-of-coding-tutorial-->
+    <section id="home-page">
+        <img width="300px" class="animated inifinite tada" src="img/logo.png">
+    <h1 id="Title">Greasy Spoon Findr.</h1>
+    <h4 class="Secondery-heading"</h4>    
+        <div class="dropdown">   
         <select class="dropdown">
-        <option  value="feed the chicken man">Streetwear</option>
-        <option  value="bake a chicken">Vintage</option>
-        <option  value="eat chicken">Smartwear</option>  
-        <option  value="look at chicken">Smart casual</option>    
-        </select> 
-            </div>
-            <button>Search</button>
-            </div>
-        <p>Stores near you  </p>
-            <p>pick an option to get started!</p>
-        </section>
-        <!-- resluts sction -->
+        <option  value="answer 1">Greasy</option>
+        <option  value="answer 2">Greasier</option>
+        <option  value="answer 3">Greasiest</option>     
+        </select>
+                    <button id="search-button">Search</button>    
+    </div>
+            </section>
+<!--End-of-coding-tutorial-->
+<!--Start-of-the-results-section-->
         <section id="results">
-            
-        <h1 class="black">Streetwear</h1>
-            <p class="black">Streetwear shops near you!</p>
-        <img class="placeholder" src="img/placeholder.png">
-            <button id="back">back</button>
-        </section>
-         <section id="profile">
-             <a class="button"></a>
-             <h1>kevin</h1>
-             <img width="400px" src="img/1154.jpg">
-             <h2>about this person</h2>
-             <p></p>
-             <button class="contact button">contact Kev!</button>
-             
-        </section>
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <a class="map"></a>    
+        <div class="list">
+        <h1 id="ListToggle" class="black">Places Near you!</h1>  
+        <ol id="ListToggle" class="black">
+            <li id="Item1">
+                <h2 class="black">chicken shop one</h2>
+                <p class="list">a chicken shop</p>
+            </li>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            <li id="Item2">
+                <h2 class="list">chicken shop two</h2>
+                <p class="list">a chicken shop</p>
+            </li>
+        </ol>       
+        </div>
             
-            
-            
-            
-            
-            
-        </script>
-    </body>
-</html>
+        <button class="Toggle">list</button>       
+        <button id="back">back</button>
+          
+<!--        fghjkjhg    -->
+                 
+<!--     ghjkjh-->
+<!--Start-of-map--> 
+        <div id="map"></div>  
+<!--End-of-map-->    
+        </section>
+<!--end-of-results-section-->
+<!--start-of-profile-section-->        
+        <section id="profile">
+        </section>
+<!--End-of-the-profile-section-->
+<!--All-the-links-to-the-javascript-are-here-->
+<!--start-of-firebase-database-->
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAQxZ3Yn2X_49liH2A1UAyVAu2aI00zX3Q",
+    authDomain: "restaurants-eeb98.firebaseapp.com",
+    databaseURL: "https://restaurants-eeb98.firebaseio.com",
+  };
+  firebase.initializeApp(config);
+</script>  
+<!--end=of=firebase=database -->
+     <script src="js/Filter.js"></script>
+    <script src="js/firebase.js"></script>
+      <script src="js/show.js"></script>
+     <script src="js/geolocate.js"></script>
+    
+<!--Mapbox-online-link----><script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>    
+<!--Mapbox-own-file-link--><script src="js/mapbox.js"></script>    
+<!------------------------><script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<!------------------------><script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!------------------------><script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<!--javascript-plugin-----><script src="js/plugins.js"></script>
+  
+<!--My-main.js-always-keep-at-the-end--><script src="js/main.js"></script>    
+<!--All-the-links-to-the-javascript-end-here-->         
+</body>
+<!--The-body-ends-here-->   
+<!--</html>-->
